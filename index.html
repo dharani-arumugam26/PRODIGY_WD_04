@@ -232,7 +232,7 @@
 
         .skills-grid {
             display: flex;
-            .flex-wrap: wrap;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
         }
@@ -408,10 +408,25 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        /* Smooth Scrolling */
         html {
             scroll-behavior: smooth;
         }
+
+        .profile-photo {
+            width: 150px; /* Adjust the size of the photo */
+            height: 150px; /* Adjust the size to maintain aspect ratio */
+            border-radius: 50%; /* Make the photo circular */
+            border: 4px solid #fff; /* White border around the photo */
+            margin: 20px auto; /* Center the photo */
+            display: block; /* Center the photo in the container */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for the photo */
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.1); /* Enlarge the photo slightly on hover */
+        }
+
     </style>
 
 </head>
@@ -431,8 +446,10 @@
 
     <section id="home">
         <h1>Sri Bhavadharani Arumugam</h1>
+        <img src="https://github.com/dharani-arumugam26/PRODIGY_WD_04/blob/main/myphoto.jpg" alt="Sri Bhavadharani Arumugam" class="profile-photo">
         <p>Second-Year Computer Science Student | Aspiring Web Developer | Enthusiastic Learner</p>
     </section>
+    
 
     <section id="about">
         <h2>About Me</h2>
@@ -516,12 +533,12 @@
             <div class="certificate">
                 <h3>API Fundamentals</h3>
                 <p>Postman API Fundamentals Student Expert</p>
-                <a href="https://drive.google.com/file/d/1hi9XfCn_ZU-4X2Kmd5vUJIxrQOXuXVfT/view?usp=drive_link">View Certificate</a>
+                <a href="https://drive.google.com/file/d/1hi9XfCn_ZU-4X2Kmd5vUJIxrQOXuXVfT/view?usp=sharing">View Certificate</a>
             </div>
             <div class="certificate">
                 <h3>Gen AI Study Jams</h3>
                 <p>Gen AI Study Jams Program 2023-2024</p>
-                <a href="https://drive.google.com/file/d/16PemuzvuDoHxOJ93-DAYt_djFNJQsj0E/view?usp=drive_link">View Certificate</a>
+                <a href="https://drive.google.com/file/d/16PemuzvuDoHxOJ93-DAYt_djFNJQsj0E/view?usp=sharing">View Certificate</a>
             </div>
             <div class="certificate">
                 <h3>Data Analytics</h3>
@@ -560,7 +577,7 @@
             
             if(name && email && message) {
                 alert('Thank you for reaching out, ' + name + '! Your message has been sent.');
-                e.target.reset();  // Reset the form after submission
+                e.target.reset();  
             } else {
                 alert('Please fill out all fields.');
             }
