@@ -54,7 +54,9 @@ Alternatively, you can view the live version of the website [here](https://dhara
 - **Background Images**: Provided by [Unsplash](https://unsplash.com/).
 - **Fonts**: [Google Fonts](https://fonts.google.com/) - Poppins and Raleway.
 
-## DEPLYOMENT
+## Deployment
+
+https://dharani-arumugam26.github.io/PRODIGY_WD_04/
 
 
 
